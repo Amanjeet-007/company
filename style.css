@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ /* variables */
+ :root{
+    /* colors */
+    --primary-color:white;
+    --secondary-color:black;
+    /* sizes */
+ }
+
+
+html,
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--secondary-color);
+}
+
+/* display , color yha par hoga aur sab tailwind handle karega */
