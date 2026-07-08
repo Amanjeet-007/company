@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch",
-    "build": "npx tailwindcss -i ./style.css -o ./dist/output.css --minify",
+    "watch": "npx tailwindcss -i ./styles.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./styles.css -o ./dist/output.css --minify",
     "deploy": "node deploy.js"
   },
   "author": "Amanjeet kumar",
