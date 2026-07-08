@@ -14,5 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^4.3.2"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.2"
   }
 }
