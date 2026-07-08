@@ -7,12 +7,11 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-// Helper function to run terminal commands safely on Windows without breaking environment scope
 function runCommand(command, args) {
     return new Promise((resolve, reject) => {
         const processStream = spawn(command, args, { 
             stdio: 'inherit', 
-            shell: true // Uses the native system shell directly to bypass terminal execution restrictions
+            shell: true 
         });
 
         processStream.on('close', (code) => {
@@ -26,12 +25,12 @@ async function startDeployment() {
     console.log('📦 Compiling and minifying Tailwind CSS...');
     
     try {
-        // Points exactly to the executable local binary script inside your project files
         const tailwindPath = path.join('node_modules', '.bin', 'tailwindcss.cmd');
-        await runCommand(tailwindPath, ['-i', './style.css', '-o', './dist/output.css', '--minify']);
+        
+        // यहाँ इनपुट को ./styles.css (with 's') कर दिया गया है
+        await runCommand(tailwindPath, ['-i', './styles.css', '-o', './dist/output.css', '--minify']);
         console.log('✅ Tailwind CSS built successfully!');
         
-        // Ask for custom user input stream safely after asset compilation finishes
         rl.question('\n💬 Enter your Git commit message: ', async (message) => {
             if (!message.trim()) {
                 console.log('❌ Commit message cannot be empty. Deployment aborted.');
