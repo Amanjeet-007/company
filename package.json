@@ -5,9 +5,10 @@
   "main": "script.js",
   "type": "module",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./style.css -o ./dist/output.css --minify",
+    "deploy": "node deploy.js"
   },
   "author": "Amanjeet kumar",
   "license": "ISC",
