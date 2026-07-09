@@ -25,12 +25,12 @@ body {
   font-family: "Inter", sans-serif;
 }
 /* Custom subtle gradients to match the original layout UI exactly */
-.hero-gradient {
+/* .hero-gradient {
   background: radial-gradient(
     circle at 80% 20%,
     rgba(168, 85, 247, 0.15) 0%,
     rgba(255, 255, 255, 0) 50%
   );
-}
+} */
 
 
