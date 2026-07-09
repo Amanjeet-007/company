@@ -4,28 +4,406 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Axione Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./dist/output.css" />
 
-  </head>
-  <body>
-    <header>
-        //logo
-
-        //optioins
-        <nav></nav>
-    </header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     
-    <!-- <aside></aside> //for sidemenu -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="bg-white text-slate-900 antialiased selection:bg-purple-500 selection:text-white">
+    
+    <header class="sticky top-0 z-50 overflow-y-hidden bg-white backdrop-blur-md border-b border-slate-200 px-6 py-2">
+      <div class="max-w-7xl h-20 mx-auto flex items-center justify-between">
+        <div class="flex items-center overflow-y-hidden">
+          <img src="./public/logo-Photoroom.png" class="w-50 h-auto" alt="Axione Solutions Logo">
+        </div>
 
-    // main things
-    <main>
-        <figure></figure>
-        <article></article>
-        <p class="text-white">Hi, It's first things</p>
-    </main>
-    <footer></footer>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <a href="#" class="text-purple-600 border-b-2 border-purple-600 pb-1">Home</a>
+          <a href="#" class="hover:text-purple-600 transition-colors">Services</a>
+          <a href="#" class="hover:text-purple-600 transition-colors">Solutions</a>
+          <a href="#" class="hover:text-purple-600 transition-colors">Industries</a>
+          <a href="#" class="hover:text-purple-600 transition-colors">Company</a>
+          <a href="#" class="hover:text-purple-600 transition-colors">Insights</a>
+        </nav>
 
-    <script src="script.js"></script>
+        <a href="#" class="bg-indigo-900 hover:bg-indigo-950 text-white text-sm font-medium px-5 py-2.5 rounded-md shadow-sm transition-all flex items-center gap-2">
+          Get in Touch <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </header>
+
+    <section class="relative overflow-hidden md:pt-16 pt-12 pb-24 md:py-32 bg-linear-to-b from-purple-50/30 to-white">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs font-bold tracking-[0.2em] text-purple-600 uppercase block">Innovate. Integrate. Elevate.</span>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+            Intelligent Solutions.<br />
+            <span class="text-purple-600">Measurable Impact.</span>
+          </h1>
+          <p class="text-slate-600 text-base sm:text-lg max-w-xl leading-relaxed">
+            We help businesses harness next-gen technology to drive growth, streamline operations, and lead in the digital era.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-4">
+            <a href="#" class="bg-purple-700 hover:bg-purple-800 text-white font-medium px-6 py-3 rounded-md shadow-md transition-all flex items-center gap-2">
+              Explore Services <i data-lucide="arrow-right-circle" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="border border-slate-300 hover:border-slate-400 bg-white text-slate-700 font-medium px-6 py-3 rounded-md shadow-sm transition-all flex items-center gap-2">
+              Our Solutions <i data-lucide="play-circle" class="w-5 h-5 text-slate-400"></i>
+            </a>
+          </div>
+          
+          <div class="pt-12 space-y-3">
+            <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Trusted by forward-thinking companies</p>
+            <div class="flex flex-wrap items-center gap-x-8 gap-y-4 opacity-40 grayscale contrast-200">
+              <span class="font-bold text-lg tracking-tight">Microsoft</span>
+              <span class="font-extrabold text-lg tracking-tight">aws</span>
+              <span class="font-serif text-lg font-black tracking-tight">ORACLE</span>
+              <span class="font-semibold text-lg tracking-tight">Google</span>
+              <span class="font-mono text-lg font-bold tracking-tight">IBM</span>
+            </div>
+          </div>
+        </div>
+
+      <div class="lg:col-span-5 flex items-center justify-center">
+  <!-- Single relative container to hold both the image and its background effects -->
+  <div class="relative w-full max-w-md flex items-center justify-center aspect-square">
+    
+    <!-- 1. Background Blur Glow -->
+    <div class="absolute inset-0 bg-purple-300 rounded-full filter blur-3xl opacity-20 animate-pulse z-0"></div>
+    
+    <!-- 2. Decorative Bottom Gradient Rings -->
+    <div class="absolute w-full h-1/3 bg-linear-to-t from-purple-600/20 to-transparent bottom-0 rounded-full transform  border border-purple-500/20 z-0"></div>
+    <div class="absolute w-4/5 h-1/4 bg-linear-to-t from-purple-500/30 to-transparent bottom-6 rounded-full transform  border border-purple-400/30 shadow-lg z-0"></div>
+    
+    <!-- 3. Foreground Image (Set to relative and higher z-index to sit on top of the effects) -->
+    <img src="./public/sideimage.png" 
+         class="relative w-full h-auto object-contain drop-shadow-2xl z-10" 
+         alt="Axione visual concept illustration">
+         
+  </div>
+</div>
+    </section>
+
+    <section class="py-20 bg-slate-50/50 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-end mb-12">
+          <div>
+            <span class="text-xs font-bold tracking-[0.2em] text-purple-600 uppercase block mb-2">Services</span>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900">What We Do</h2>
+          </div>
+          <a href="#" class="text-sm font-semibold text-purple-600 hover:text-purple-700 flex items-center gap-1 group">
+            View All Services <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div class="bg-white p-6 rounded-xl border border-slate-100 hover:border-purple-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600 mb-6">
+                <i data-lucide="code" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">Software Development</h3>
+              <p class="text-xs text-slate-500 leading-relaxed">Custom software solutions built for performance, scalability, and growth.</p>
+            </div>
+            <div class="pt-6 flex justify-end">
+              <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 group-hover:text-purple-600 transition-colors"></i>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-slate-100 hover:border-purple-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600 mb-6">
+                <i data-lucide="cloud" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">Cloud Solutions</h3>
+              <p class="text-xs text-slate-500 leading-relaxed">Secure, reliable, and scalable cloud services tailored for your business.</p>
+            </div>
+            <div class="pt-6 flex justify-end">
+              <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 group-hover:text-purple-600 transition-colors"></i>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-slate-100 hover:border-purple-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600 mb-6">
+                <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">Data & Analytics</h3>
+              <p class="text-xs text-slate-500 leading-relaxed">Turn data into actionable insights to make smarter business decisions.</p>
+            </div>
+            <div class="pt-6 flex justify-end">
+              <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 group-hover:text-purple-600 transition-colors"></i>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-slate-100 hover:border-purple-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600 mb-6">
+                <i data-lucide="smartphone" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">UI/UX Design</h3>
+              <p class="text-xs text-slate-500 leading-relaxed">Designing intuitive and engaging experiences that delight users.</p>
+            </div>
+            <div class="pt-6 flex justify-end">
+              <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 group-hover:text-purple-600 transition-colors"></i>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-slate-100 hover:border-purple-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600 mb-6">
+                <i data-lucide="settings" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">Support & Maintenance</h3>
+              <p class="text-xs text-slate-500 leading-relaxed">Proactive support and maintenance to keep your business running seamlessly.</p>
+            </div>
+            <div class="pt-6 flex justify-end">
+              <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 group-hover:text-purple-600 transition-colors"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bg-indigo-950 text-white py-20 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-4 space-y-4">
+          <span class="text-xs font-bold tracking-[0.2em] text-purple-400 uppercase block">Why Choose Us</span>
+          <h2 class="text-3xl font-bold tracking-tight leading-tight">Technology. Expertise. Commitment.</h2>
+          <p class="text-indigo-200/70 text-sm leading-relaxed max-w-sm">
+            We combine deep industry knowledge with cutting-edge technology to deliver solutions that create real business value.
+          </p>
+          <div class="pt-4">
+            <a href="#" class="inline-flex items-center gap-2 border border-indigo-700 hover:border-indigo-600 bg-indigo-900/50 text-xs font-medium px-4 py-2.5 rounded-md transition-all">
+              Learn More About Us <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-8 lg:pl-12">
+          <div class="space-y-2">
+            <div class="text-purple-400"><i data-lucide="award" class="w-8 h-8"></i></div>
+            <p class="text-4xl font-bold tracking-tight">10+</p>
+            <p class="text-xs text-indigo-200/60 uppercase tracking-wider font-medium">Years of Experience</p>
+          </div>
+          <div class="space-y-2">
+            <div class="text-purple-400"><i data-lucide="briefcase" class="w-8 h-8"></i></div>
+            <p class="text-4xl font-bold tracking-tight">950+</p>
+            <p class="text-xs text-indigo-200/60 uppercase tracking-wider font-medium">Projects Delivered</p>
+          </div>
+          <div class="space-y-2">
+            <div class="text-purple-400"><i data-lucide="users" class="w-8 h-8"></i></div>
+            <p class="text-4xl font-bold tracking-tight">250+</p>
+            <p class="text-xs text-indigo-200/60 uppercase tracking-wider font-medium">Happy Clients</p>
+          </div>
+          <div class="space-y-2">
+            <div class="text-purple-400"><i data-lucide="user-check" class="w-8 h-8"></i></div>
+            <p class="text-4xl font-bold tracking-tight">30+</p>
+            <p class="text-xs text-indigo-200/60 uppercase tracking-wider font-medium">Expert Professionals</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-end mb-10">
+          <div>
+            <span class="text-xs font-bold tracking-[0.2em] text-purple-600 uppercase block mb-1">Industries</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-900">Empowering Businesses Across Industries</h2>
+          </div>
+          <a href="#" class="text-xs font-semibold text-purple-600 hover:text-purple-700 flex items-center gap-1 group">
+            View All Industries <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
+          <div class="p-4 border border-slate-100 rounded-lg flex flex-col items-center justify-center gap-2 hover:bg-slate-50 transition-colors">
+            <i data-lucide="heart-pulse" class="w-5 h-5 text-purple-600"></i>
+            <span class="text-xs font-semibold text-slate-700">Healthcare</span>
+          </div>
+          <div class="p-4 border border-slate-100 rounded-lg flex flex-col items-center justify-center gap-2 hover:bg-slate-50 transition-colors">
+            <i data-lucide="landmark" class="w-5 h-5 text-purple-600"></i>
+            <span class="text-xs font-semibold text-slate-700">Finance</span>
+          </div>
+          <div class="p-4 border border-slate-100 rounded-lg flex flex-col items-center justify-center gap-2 hover:bg-slate-50 transition-colors">
+            <i data-lucide="shopping-bag" class="w-5 h-5 text-purple-600"></i>
+            <span class="text-xs font-semibold text-slate-700">Retail</span>
+          </div>
+          <div class="p-4 border border-slate-100 rounded-lg flex flex-col items-center justify-center gap-2 hover:bg-slate-50 transition-colors">
+            <i data-lucide="factory" class="w-5 h-5 text-purple-600"></i>
+            <span class="text-xs font-semibold text-slate-700">Manufacturing</span>
+          </div>
+          <div class="p-4 border border-slate-100 rounded-lg flex flex-col items-center justify-center gap-2 hover:bg-slate-50 transition-colors">
+            <i data-lucide="graduation-cap" class="w-5 h-5 text-purple-600"></i>
+            <span class="text-xs font-semibold text-slate-700">Education</span>
+          </div>
+          <div class="p-4 border border-slate-100 rounded-lg flex flex-col items-center justify-center gap-2 hover:bg-slate-50 transition-colors">
+            <i data-lucide="truck" class="w-5 h-5 text-purple-600"></i>
+            <span class="text-xs font-semibold text-slate-700">Logistics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-slate-50/50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-4 space-y-4">
+            <span class="text-xs font-bold tracking-[0.2em] text-purple-600 uppercase block">Case Study</span>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 leading-tight">Delivering Success Through Innovation</h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              See how we helped a leading retail business streamline operations and increase revenue.
+            </p>
+            <div class="pt-2 flex items-center gap-4">
+              <button class="w-8 h-8 rounded-full border border-slate-300 flex items-center justify-center text-slate-600 hover:bg-white transition-colors">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+              </button>
+              <a href="#" class="border border-purple-600 text-purple-600 font-medium text-xs px-5 py-2.5 rounded-md hover:bg-purple-50 transition-all flex items-center gap-2">
+                View Case Study <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8 bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 grid grid-cols-1 md:grid-cols-12">
+            <div class="md:col-span-5 bg-slate-100 relative min-h-60">
+              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80" alt="Retail Analysis Automation" class="w-full h-full object-cover absolute inset-0" />
+            </div>
+            <div class="md:col-span-7 p-8 flex flex-col justify-between space-y-6">
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-1">Retail Transformation</span>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Implemented a unified digital solution that improved inventory accuracy by 40% and increased sales by 28%.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-100">
+                <div>
+                  <p class="text-2xl font-bold text-purple-600">40%</p>
+                  <p class="text-[11px] text-slate-400 font-medium">Inventory Accuracy Improvement</p>
+                </div>
+                <div>
+                  <p class="text-2xl font-bold text-purple-600">28%</p>
+                  <p class="text-[11px] text-slate-400 font-medium">Increase in Sales</p>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <div class="flex gap-1.5">
+                  <span class="w-4 h-1.5 bg-purple-600 rounded-full"></span>
+                  <span class="w-1.5 h-1.5 bg-slate-300 rounded-full"></span>
+                </div>
+                <button class="w-8 h-8 bg-purple-600 hover:bg-purple-700 text-white rounded-full flex items-center justify-center">
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 -mb-15 relative z-10">
+      <div class="bg-purple-700 rounded-2xl p-8 md:p-12 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+              <i data-lucide="mail" class="w-5 h-5 text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold tracking-tight">Stay Ahead with Insights</h3>
+          </div>
+          <p class="text-purple-100 text-xs md:text-sm max-w-md">
+            Subscribe to our newsletter for the latest updates, insights, and industry trends.
+          </p>
+        </div>
+        <form class="w-full md:w-auto flex flex-col sm:flex-row items-center gap-3 flex-1 justify-end">
+          <input type="email" placeholder="Enter your email address" class="w-full max-w-sm bg-white text-slate-900 placeholder:text-slate-400 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400" />
+          <button type="submit" class="w-full sm:w-auto bg-indigo-950 hover:bg-indigo-900 text-white text-sm font-semibold px-6 py-3 rounded-md transition-colors whitespace-nowrap">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-indigo-950 text-slate-400 text-xs pt-32 pb-8 border-t border-indigo-900/40">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-12 gap-8 mb-12">
+        <div class="col-span-2 md:col-span-4 space-y-4">
+          <div class="flex items-center gap-2">
+            <img src="./public/logo-Photoroom.png" width="150" alt="">
+          </div>
+          <p class="text-slate-400 leading-relaxed max-w-xs">
+            We deliver intelligent solutions that drive growth, efficiency, and long-term success.
+          </p>
+          <div class="flex items-center gap-4 pt-2 text-slate-400">
+            <a href="#" class="hover:text-white transition-colors"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" class="hover:text-white transition-colors"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+            <a href="#" class="hover:text-white transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+            <a href="#" class="hover:text-white transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <div class="col-span-1 md:col-span-2 space-y-3">
+          <h4 class="font-semibold text-white uppercase tracking-wider text-[11px]">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Our Team</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Insights</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-span-1 md:col-span-2 space-y-3">
+          <h4 class="font-semibold text-white uppercase tracking-wider text-[11px]">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition-colors">Software Development</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Cloud Solutions</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Data & Analytics</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">UI/UX Design</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Support & Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-span-1 md:col-span-2 space-y-3">
+          <h4 class="font-semibold text-white uppercase tracking-wider text-[11px]">Solutions</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition-colors">Digital Transformation</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Business Automation</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Enterprise Solutions</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">AI & Integration</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Cyber Security</a></li>
+          </ul>
+        </div>
+
+        <div class="col-span-1 md:col-span-2 space-y-3">
+          <h4 class="font-semibold text-white uppercase tracking-wider text-[11px]">Industries</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition-colors">Healthcare</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Finance</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Retail</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Manufacturing</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Logistics</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-indigo-900/60 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px]">
+        <div class="flex flex-wrap items-center gap-6 justify-center md:justify-start">
+          <span class="flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5 text-purple-400"></i> +91 91765 43210</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="mail" class="w-3.5 h-3.5 text-purple-400"></i> hello@axionesolutions.com</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-purple-400"></i> Bangalore, India 560001</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <span>&copy; 2026 Axione Solutions. All rights reserved.</span>
+          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
